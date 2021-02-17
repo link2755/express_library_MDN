@@ -124,7 +124,6 @@ exports.genre_delete_get = function (req, res, next) {
         res.redirect("/catalog/genres");
       }
       // Successful, so render.
-      console.log(results.genre_books);
       res.render("genre_delete", {
         title: "Delete Genre",
         genre: results.genre,
@@ -135,7 +134,6 @@ exports.genre_delete_get = function (req, res, next) {
 };
 // Handle Genre delete on POST.
 exports.genre_delete_post = function (req, res, next) {
-  console.log('post')
   async.parallel(
     {
       genre: function (callback) {

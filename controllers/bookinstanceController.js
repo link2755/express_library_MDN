@@ -43,7 +43,6 @@ exports.bookinstance_create_get = function(req, res, next) {
     .exec(function (err, books) {
       if (err) { return next(err); }
       // Successful, so render.
-      console.log(books)
       res.render('bookinstance_form', {title: 'Create BookInstance', book_list: books});
     });
 
@@ -156,7 +155,6 @@ exports.bookinstance_update_get = function(req, res, next) {
                 err.status = 404;
                 return next(err);
             }
-            console.log(results.book_list)
             res.render('bookinstance_form', { title: 'Update Book Instance', bookinstance: results.bookinstance, book_list: results.book_list});
         });
 
