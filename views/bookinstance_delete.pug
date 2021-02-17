@@ -4,6 +4,10 @@ block content
 
   h1 ID: #{bookinstance._id}
 
+  if bookinstance.status!='Available'
+
+
+
   p #[strong Title:]
     a(href=bookinstance.book.url) #{bookinstance.book.title}
   p #[strong Imprint:] #{bookinstance.imprint}
@@ -18,9 +22,15 @@ block content
 
   if bookinstance.status!='Available'
     p #[strong Due back:] #{bookinstance.due_back_formatted}
+    
+    p #[strong The instance needs to be Available before attempting to delete this]
+  else
+    p Do you really want to delete this Instance?
 
-  hr
-  p
-    a(href=bookinstance.url+'/delete') Delete Book Instance
-  p
-    a(href=bookinstance.url+'/update') Update Book Instance
+    form(method='POST' action='')
+      div.form-group
+        input#bookinstanceid.form-control(type='hidden',name='bookinstanceid', required='true', value=bookinstance._id )
+
+      button.btn.btn-primary(type='submit') Delete
+        
+

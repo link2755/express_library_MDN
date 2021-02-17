@@ -485,6 +485,14 @@
   "resolved" "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz"
   "version" "1.8.1"
 
+"express-validator@^6.9.2":
+  "integrity" "sha512-Yqlsw2/uBobtBVkP+gnds8OMmVAEb3uTI4uXC93l0Ym5JGHgr8Vd4ws7oSo7GGYpWn5YCq4UePMEppKchURXrw=="
+  "resolved" "https://registry.npmjs.org/express-validator/-/express-validator-6.9.2.tgz"
+  "version" "6.9.2"
+  dependencies:
+    "lodash" "^4.17.20"
+    "validator" "^13.5.2"
+
 "express@~4.16.1":
   "integrity" "sha512-j12Uuyb4FMrd/qQAm6uCHAkPtO8FDTRJZBDd5D2KOL2eLaz1yUNdUB/NOIyq0iU4q4cFarsUCrnFDPBcnksuOg=="
   "resolved" "https://registry.npmjs.org/express/-/express-4.16.4.tgz"
@@ -843,10 +851,10 @@
   dependencies:
     "package-json" "^6.3.0"
 
-"lodash@^4.17.19":
-  "integrity" "sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ=="
-  "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.19.tgz"
-  "version" "4.17.19"
+"lodash@^4.17.19", "lodash@^4.17.20":
+  "integrity" "sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA=="
+  "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz"
+  "version" "4.17.20"
 
 "lowercase-keys@^1.0.0", "lowercase-keys@^1.0.1":
   "integrity" "sha512-G2Lj61tXDnVFFOi8VZds+SoQjtQC3dgokKdDG2mTm1tx4m50NUHBOZSBwQQHyy0V12A0JTG4icfZQH+xPyh8VA=="
@@ -1620,6 +1628,11 @@
   "integrity" "sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM="
   "resolved" "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   "version" "1.0.1"
+
+"validator@^13.5.2":
+  "integrity" "sha512-mD45p0rvHVBlY2Zuy3F3ESIe1h5X58GPfAtslBjY7EtTqGquZTj+VX/J4RnHWN8FKq0C9WRVt1oWAcytWRuYLQ=="
+  "resolved" "https://registry.npmjs.org/validator/-/validator-13.5.2.tgz"
+  "version" "13.5.2"
 
 "vary@~1.1.2":
   "integrity" "sha1-IpnwLG3tMNSllhsLn3RSShj2NPw="
